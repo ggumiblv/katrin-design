@@ -1,12 +1,10 @@
 @use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
 
 .intro 
-  width: 100%
-  border-bottom: 1px solid vars.$gray700
+  @include mixin.section
   &__container 
-    max-width: 1144px
-    margin: auto
-    padding: 64px 32px 
+    @include mixin.container
   &__subtitle
     font-family: vars.$font-family-primary
     text-transform: uppercase
@@ -36,20 +34,21 @@
     line-height: 32px
     max-width: 657px
     margin-top: 27px
+    color: vars.$gray250
     span 
       position: relative
+      color: vars.$gray250
       &::before
         content: ""
         position: absolute
         top: 7px
-        left: 0
+        left: 4px
         width: 66px
         height: 16px
         background-image: url('../../assets/icons/cross.svg')
         background-repeat: no-repeat
         background-size: contain
         background-position: center
-        background-color: transparent
   &__actions 
     margin-top: 41px
     display: flex 

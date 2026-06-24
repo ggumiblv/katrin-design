@@ -1,0 +1,61 @@
+@use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
+
+.project-card 
+  width: 100%
+  height: 241px
+  border-radius: 12px
+  border: 1px solid vars.$gray500
+  background: vars.$gray600
+  padding: 22px
+  display: flex 
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  &__header 
+    width: 100%
+    display: inline-flex
+    justify-content: space-between 
+    align-items: center
+    &-number 
+      @include mixin.section-number
+      color: vars.$gray400
+    &-tags 
+      padding: 3px 9px
+      background: vars.$purple800
+      border-radius: 5px
+      span
+        color: vars.$purple400
+        font-family: vars.$font-family-primary
+        font-size: 11px 
+        line-height: 18px
+      span:not(:last-child)::after 
+        font-family: vars.$font-family-primary
+        font-size: 11px 
+        line-height: 18px
+        color: vars.$purple400
+        content: "·"
+        margin: 2px 8px
+  &__title 
+    margin-top: 24px
+    font-weight: 500 
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: -0.19px 
+  &__description 
+    margin-top: 8px
+    font-size: 14px
+    line-height: 22px
+    color: vars.$gray250 
+  &__link 
+    margin-top: auto
+    font-family: vars.$font-family-primary
+    font-size: 12px 
+    line-height: 19px
+    color: vars.$purple400
+    &:hover,
+    &:active
+      color: vars.$purple200
+      
+
+      

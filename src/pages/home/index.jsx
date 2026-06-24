@@ -1,13 +1,15 @@
+import Projects from '@/components/projects';
 import Header from '@/components/header';
+import Intro from '@/components/intro';
 
 import './index.sass';
-import Intro from '../../components/intro';
 
 export default function Home() {
   return (
     <div>
       <Header />
       <Intro />
+      <Projects />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-@use './animation'
+@use './vars'
 
 @mixin noSelect
   user-select: none
@@ -24,3 +24,27 @@
   object-fit: contain
   object-position: center
 
+@mixin section 
+  width: 100%
+  border-bottom: 1px solid vars.$gray700
+
+@mixin container($max-width: 1144px, $padding: 64px 32px) 
+  max-width: $max-width
+  margin: 0 auto
+  padding: $padding
+
+@mixin section-title 
+  font-family: vars.$font-family-primary
+  text-transform: uppercase 
+  font-size: 13px
+  line-height: 20px
+  letter-spacing: 1.56px
+  color: vars.$gray400
+
+@mixin section-number 
+  font-family: vars.$font-family-primary
+  text-transform: uppercase 
+  font-size: 12px
+  line-height: 19px
+  letter-spacing: 0.6px
+  color: vars.$purple400

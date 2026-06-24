@@ -1,0 +1,27 @@
+@use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
+  
+.projects 
+  @include mixin.section
+  &__container 
+    @include mixin.container($max-width: 1144px, $padding: 80px 32px)
+  &__title
+    display: inline-flex
+    justify-content: flex-start
+    align-items: center
+    gap: 16px
+    span 
+      @include mixin.section-number 
+    h4 
+      @include mixin.section-title
+  &__list 
+    position: relative
+    margin-top: 40px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 14px
+    &-image 
+      position: absolute
+      right: 4px 
+      bottom: 4px
+      
