@@ -37,12 +37,43 @@
     max-width: 657px
     margin-top: 27px
     span 
+      position: relative
       &::before
         content: ""
         position: absolute
+        top: 7px
+        left: 0
         width: 66px
         height: 16px
         background-image: url('../../assets/icons/cross.svg')
         background-repeat: no-repeat
         background-size: contain
         background-position: center
+        background-color: transparent
+  &__actions 
+    margin-top: 41px
+    display: flex 
+    justify-content: flex-start
+    align-items: center
+    gap: 14px
+    &-button 
+      padding: 12px 24px
+      font-family: vars.$font-family-primary
+      font-size: 18px
+      line-height: 20px
+      border-radius: 7px
+      transition: all 250ms ease
+      &--primary
+        color: vars.$purple200
+        background-color: vars.$purple600
+        &:hover,
+        &:active
+          background-color: vars.$purple400
+      &--secondary 
+        color: vars.$gray250
+        border: 1px solid vars.$gray500
+        &:hover,
+        &:active
+          color: vars.$purple200
+          background-color: vars.$purple600
+          border: 1px solid vars.$purple400

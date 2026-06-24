@@ -13,7 +13,7 @@ export default function Intro() {
         </div>
         <p className="intro__description">
           Превращаю хаотичные вводные в понятные сценарии, интерфейсы и цифровые продукты, которые
-          <span>можно</span> нужно реализовать.
+          <span> можно</span> нужно реализовать.
         </p>
         <div className="intro__actions">
           <button className="intro__actions-button intro__actions-button--primary">
