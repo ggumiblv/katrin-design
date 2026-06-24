@@ -1,7 +1,7 @@
-@use '../../assets/sass/vars'
-@use '../../assets/sass/mixin'
+@use '../../../assets/sass/vars'
+@use '../../../assets/sass/mixin'
   
-.approach
+.tasks
   @include mixin.section
   &__container 
     @include mixin.container($max-width: 1144px, $padding: 80px 32px)
@@ -14,19 +14,14 @@
       @include mixin.section-number 
     h4 
       @include mixin.section-title
-  &__image 
-    position: absolute
-    top: 80px 
-    right: 32px
-    width: 63px 
-    height: 128px
-  &__description
-    max-width: 886px
+  &__list 
+    position: relative
     margin-top: 40px
-    font-weight: 500
-    font-size: 28px
-    line-height: 34px
-    letter-spacing: -0.56px
-    text-transform: uppercase
-
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 14px
+    &-image 
+      position: absolute
+      right: 4px 
+      bottom: 4px
       

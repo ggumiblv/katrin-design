@@ -1,0 +1,19 @@
+@use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
+
+.footer
+  @include mixin.section
+  &__container 
+    @include mixin.container($max-width: 1144px, $padding: 30px 32px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p 
+      text-transform: lowercase
+      font-family: vars.$font-family-primary
+      font-size: 12px
+      line-height: 19px
+      color: vars.$gray400
+      a 
+        color: vars.$purple600
+  

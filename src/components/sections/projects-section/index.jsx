@@ -1,6 +1,6 @@
 import projectsData from '@/lib/projects';
 
-import ProjectCard from '../project-card';
+import ProjectCard from '../../project-card';
 
 import futureProjectsImage from '@/assets/icons/future-projects.webp';
 

@@ -1,6 +1,6 @@
-import tasksData from '../../lib/tasks';
+import tasksData from '../../../lib/tasks';
 
-import TaskCard from '../task-card';
+import TaskCard from '../../task-card';
 
 import './index.sass';
 
