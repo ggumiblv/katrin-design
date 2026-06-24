@@ -1,0 +1,32 @@
+@use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
+  
+.approach
+  @include mixin.section
+  &__container 
+    @include mixin.container($max-width: 1144px, $padding: 80px 32px)
+  &__title
+    display: inline-flex
+    justify-content: flex-start
+    align-items: center
+    gap: 16px
+    span 
+      @include mixin.section-number 
+    h4 
+      @include mixin.section-title
+  &__image 
+    position: absolute
+    top: 80px 
+    right: 32px
+    width: 63px 
+    height: 128px
+  &__description
+    max-width: 886px
+    margin-top: 40px
+    font-weight: 500
+    font-size: 28px
+    line-height: 34px
+    letter-spacing: -0.56px
+    text-transform: uppercase
+
+      

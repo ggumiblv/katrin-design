@@ -1,5 +1,7 @@
+import Approach from '@/components/approach-section';
 import Projects from '@/components/projects-section';
-import Tasks from '../../components/tasks-section';
+import About from '@/components/about-section';
+import Tasks from '@/components/tasks-section';
 import Intro from '@/components/intro-section';
 import Header from '@/components/header';
 
@@ -12,6 +14,8 @@ export default function Home() {
       <Intro />
       <Projects />
       <Tasks />
+      <Approach />
+      <About />
     </div>
   );
 }

@@ -1,0 +1,46 @@
+@use '../../assets/sass/vars'
+@use '../../assets/sass/mixin'
+  
+.about
+  @include mixin.section
+  &__container 
+    @include mixin.container($max-width: 1144px, $padding: 80px 32px)
+  &__title
+    display: inline-flex
+    justify-content: flex-start
+    align-items: center
+    gap: 16px
+    span 
+      @include mixin.section-number 
+    h4 
+      @include mixin.section-title
+  &__body 
+    margin-top: 40px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    &-title 
+      max-width: 449px
+      font-weight: 500
+      font-size: 32px 
+      line-height: 40px
+      letter-spacing: -0.64px
+      span 
+        color: vars.$purple600
+    &-info 
+      &__item
+        padding: 18px 0px
+        border-top: 1px solid vars.$gray500
+        display: flex
+        gap: 27px
+        &:last-of-type
+          border-bottom: 1px solid vars.$gray500
+        span 
+          width: 36px
+          font-size: 12px
+          line-height: 19px
+          color: vars.$purple400
+        p
+          font-size: 15px
+          line-height: 22px
+          
