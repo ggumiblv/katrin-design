@@ -1,5 +1,6 @@
 @use '../../../assets/sass/vars'
 @use '../../../assets/sass/mixin'
+@use '../../../assets/sass/breakpoints' as *
 
 .intro 
   @include mixin.section
@@ -9,7 +10,7 @@
     font-family: vars.$font-family-primary
     text-transform: uppercase
     font-size: 12px
-    letter-spacing: 1.68px
+    letter-spacing: -1px
     line-height: 19px
     color: vars.$gray400
   &__title
@@ -18,8 +19,12 @@
     text-transform: uppercase
     font-weight: 600
     font-size: 68px
-    line-height: 70px
-    letter-spacing: -1.7px
+    line-height: 110%
+    letter-spacing: -2px
+    +laptop
+    +tablet
+      font-size: 54px
+      line-height: 56px
     &-image 
       position: absolute
       top: 10px 
@@ -28,13 +33,20 @@
       height: 118px
       display: block
       border-radius: 50%
+      +laptop
+        top: auto 
+        bottom: 20px
+        right: 0px
+      +tablet
   &__description
     font-family: vars.$font-family-secondary
-    font-size: 20px
-    line-height: 32px
+    font-size: 19px
+    line-height: 150%
     max-width: 657px
     margin-top: 27px
     color: vars.$gray250
+    +laptop
+      line-height: 32px
     span 
       position: relative
       color: vars.$gray250

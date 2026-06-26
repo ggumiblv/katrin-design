@@ -1,5 +1,6 @@
 @use '../../../assets/sass/vars'
 @use '../../../assets/sass/mixin'
+@use '../../../assets/sass/breakpoints' as *
   
 .tasks
   @include mixin.section
@@ -20,6 +21,8 @@
     display: grid
     grid-template-columns: repeat(3, 1fr)
     gap: 14px
+    +laptop
+      grid-template-columns: repeat(2, 1fr)
     &-image 
       position: absolute
       right: 4px 

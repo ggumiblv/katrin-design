@@ -1,4 +1,6 @@
 @use './vars'
+@use './breakpoints' as *
+
 
 @mixin noSelect
   user-select: none
@@ -33,6 +35,11 @@
   max-width: $max-width
   margin: 0 auto
   padding: $padding
+  +laptop
+    max-width: 944px
+  +tablet
+    max-width: 768px
+    padding-inline: 27px
 
 @mixin section-title 
   font-family: vars.$font-family-primary

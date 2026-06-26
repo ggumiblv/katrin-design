@@ -6,9 +6,6 @@ export default function Contacts() {
   return (
     <section className="contacts">
       <div className="contacts__container">
-        <div className="contacts__title">
-          <span>05</span> <h4>Как я работаю</h4>
-        </div>
         <h5 className="contacts__info">
           Приносите сложную, запутанную задачу. <span>Разберёмся.</span>
         </h5>
