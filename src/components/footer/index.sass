@@ -8,12 +8,23 @@
     display: flex
     justify-content: space-between
     align-items: center
-    p 
-      text-transform: lowercase
+    p
       font-family: vars.$font-family-primary
       font-size: 12px
-      line-height: 19px
+      line-height: 150%
       color: vars.$gray400
       a 
+        position: relative
         color: vars.$purple600
+        &::before
+          content: ""
+          position: absolute
+          top: 9px
+          left: -7px
+          width: 59px
+          height: 16px
+          background-image: url('../../assets/icons/purple-cross.svg')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
   

@@ -1,5 +1,5 @@
 import interactiveImage from '@/assets/icons/interactive.webp';
-import conceptImage from '@/assets/icons/interactive.webp';
+import conceptImage from '@/assets/icons/concept.webp';
 import systemImage from '@/assets/icons/system.webp';
 
 const tasksData = [

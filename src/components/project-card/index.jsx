@@ -15,7 +15,7 @@ export default function ProjectCard({ data }) {
       </div>
       <h5 className="project-card__title">{data.name}</h5>
       <p className="project-card__description">{data.description}</p>
-      <Link className="project-card__link">Смотреть кейс →</Link>
+      <Link className="project-card__link">смотреть кейс →</Link>
     </div>
   );
 }
