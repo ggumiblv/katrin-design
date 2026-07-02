@@ -13,6 +13,8 @@
     letter-spacing: 1px
     line-height: 150%
     color: vars.$gray400
+    +mobile 
+      font-size: 12px
   &__title
     position: relative
     margin-top: 27px
@@ -20,10 +22,14 @@
     font-weight: 600
     font-size: 68px
     letter-spacing: -2px
-    +laptop
     +tablet
-      font-size: 54px
-      line-height: 56px
+      font-size: 52px
+      letter-spacing: -1px
+    +mobile
+      max-width: 430px
+      margin-top: 18px
+      font-size: 28px
+      font-weight: 500
     &-image 
       position: absolute
       top: 10px 
@@ -34,9 +40,12 @@
       border-radius: 50%
       +laptop
         top: auto 
-        bottom: 20px
+        bottom: -30px
         right: 0px
       +tablet
+        bottom: 0px
+      +mobile 
+        display: none
   &__description
     font-family: vars.$font-family-secondary
     font-size: 20px
@@ -44,8 +53,10 @@
     max-width: 657px
     margin-top: 27px
     color: vars.$gray250
-    +laptop
-      line-height: 32px
+    +mobile 
+      max-width: 430px
+      font-size: 16px
+      margin-top: 18px
     span 
       position: relative
       color: vars.$gray250
@@ -60,18 +71,28 @@
         background-repeat: no-repeat
         background-size: contain
         background-position: center
+        +mobile 
+          top: 3px
+          left: 0px
+          width: 58px
   &__actions 
     margin-top: 41px
     display: flex 
     justify-content: flex-start
     align-items: center
     gap: 14px
+    +mobile  
+      margin-top: 32px
+      flex-direction: column
     &-button 
       padding: 12px 24px
       font-family: vars.$font-family-primary
       font-size: 18px
       border-radius: 7px
       transition: all 250ms ease
+      +mobile
+        width: 100%
+        font-size: 16px
       &--primary
         color: vars.$purple200
         background-color: vars.$purple600

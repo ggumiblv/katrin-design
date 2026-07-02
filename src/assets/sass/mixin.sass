@@ -29,6 +29,8 @@
 @mixin section 
   width: 100%
   border-bottom: 1px solid vars.$gray700
+  +mobile
+    border: none
 
 @mixin container($max-width: 1144px, $padding: 64px 32px) 
   position: relative
@@ -39,7 +41,10 @@
     max-width: 944px
   +tablet
     max-width: 768px
-    padding-inline: 27px
+    padding-inline: 28px
+  +mobile 
+    max-width: 650px
+    padding: 40px 14px
 
 @mixin section-title 
   font-family: vars.$font-family-primary

@@ -1,5 +1,6 @@
 @use '../../assets/sass/vars'
 @use '../../assets/sass/mixin'
+@use '../../assets/sass/breakpoints' as *
 
 .footer
   @include mixin.section
@@ -8,6 +9,10 @@
     display: flex
     justify-content: space-between
     align-items: center
+    +mobile 
+      flex-direction: column
+      align-items: flex-start
+      gap: 6px
     p
       font-family: vars.$font-family-primary
       font-size: 12px

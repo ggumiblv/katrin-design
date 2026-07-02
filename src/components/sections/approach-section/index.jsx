@@ -1,4 +1,5 @@
 import approachImage from '@/assets/icons/approach.webp';
+import approachImageMobile from '@/assets/icons/approach-mobile.webp';
 
 import './index.sass';
 
@@ -15,6 +16,7 @@ export default function Approach() {
           реализуемому решению.
         </p>
         <img className="approach__image" src={approachImage} />
+        <img className="approach__image--mobile" src={approachImageMobile} />
       </div>
     </section>
   );

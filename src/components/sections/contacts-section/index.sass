@@ -1,10 +1,13 @@
 @use '../../../assets/sass/vars'
 @use '../../../assets/sass/mixin'
+@use '../../../assets/sass/breakpoints' as *
 
 .contacts 
   @include mixin.section
   &__container 
     @include mixin.container($max-width: 1144px, $padding: 80px 32px 114px)
+    +tablet
+      @include mixin.container($max-width: 768px, $padding: 80px 28px)
   &__title
     display: inline-flex
     justify-content: flex-start
@@ -15,18 +18,27 @@
     h4 
       @include mixin.section-title
   &__info 
-    margin-top: 39px
     font-weight: 500
     font-size: 28px
     line-height: 34px 
     letter-spacing: -0.56px
     text-transform: uppercase
+    +laptop
+      max-width: 86%
+    +tablet 
+      max-width: 50%
     span 
       color: vars.$purple600
   &__image 
     position: absolute 
     top: 25px 
     right: 32px
+    display: block
+    width: 118px 
+    height: 148px 
+    +mobile 
+      top: 47px
+      right: 14px
   &__body 
     width: 100%
     margin-top: 24px
@@ -37,8 +49,11 @@
       border-radius: 10px
       padding: 18px 22px
       font-family: vars.$font-family-primary
-      text-transform: uppercase
-      font-size: 11px
-      line-height: 18px
-      letter-spacing: 1.1px
+      font-size: 14px
+      text-transform: lowercase
       color: vars.$purple400
+      display: flex 
+      align-items: center 
+      justify-content: center
+      +mobile 
+        padding: 18px 8px

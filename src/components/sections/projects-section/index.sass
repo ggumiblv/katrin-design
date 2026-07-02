@@ -23,8 +23,22 @@
     gap: 14px
     +laptop
       grid-template-columns: repeat(2, 1fr)
+    +mobile 
+      grid-template-columns: repeat(1, 1fr)
+      gap: 12px
     &-image 
       position: absolute
       right: 4px 
       bottom: 4px
+      +mobile 
+        display: none 
+      &--mobile 
+        position: absolute 
+        bottom: -50px
+        right: 0
+        display: none 
+        width: 177px 
+        height: 38px
+        +mobile 
+          display: block 
       

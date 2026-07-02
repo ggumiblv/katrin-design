@@ -10,8 +10,8 @@ export default function Contacts() {
           Приносите сложную, запутанную задачу. <span>Разберёмся.</span>
         </h5>
         <div className="contacts__body">
+          <div className="contacts__body-item">имэйл</div>
           <div className="contacts__body-item">Телеграм</div>
-          <div className="contacts__body-item">Email</div>
           <div className="contacts__body-item">канал в тг</div>
         </div>
 

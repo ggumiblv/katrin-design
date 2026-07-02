@@ -1,5 +1,6 @@
 @use '../../../assets/sass/vars'
 @use '../../../assets/sass/mixin'
+@use '../../../assets/sass/breakpoints' as *
   
 .approach
   @include mixin.section
@@ -20,6 +21,17 @@
     right: 32px
     width: 63px 
     height: 128px
+    +tablet 
+      top: 109px
+    +mobile 
+      display: none
+    &--mobile 
+      display: none 
+      position: absolute 
+      right: 14px
+      bottom: 0
+      +mobile 
+        display: block
   &__description
     max-width: 751px
     margin-top: 40px
@@ -27,5 +39,13 @@
     font-size: 32px
     letter-spacing: 0px
     text-transform: uppercase
+    +laptop
+      max-width: 86%
+    +tablet 
+      font-size: 28px
+    +mobile  
+      font-size: 20px
+      font-weight: 500
+      max-width: 450px
 
       

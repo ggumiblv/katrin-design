@@ -1,4 +1,5 @@
 import LogoImage from '@/assets/icons/logo.svg?react';
+import menuImage from '@/assets/icons/button.webp';
 
 import './index.sass';
 
@@ -7,6 +8,10 @@ export default function Header() {
     <section className="header">
       <div className="header__container">
         <LogoImage className="header__logo" />
+
+        <button className="header__menu">
+          <img src={menuImage} />
+        </button>
 
         <nav className="header__nav">
           <button className="header__nav-button">проекты</button>

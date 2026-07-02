@@ -10,7 +10,7 @@ export default function About() {
 
         <div className="about__body">
           <p className="about__body-title">
-            Системное мышление, открытая коммуникация <br />и
+            Системное мышление, открытая коммуникация <br className="about__body-br" />и
             <span> решения, которые можно реализовать.</span>
           </p>
           <div className="about__body-info">

@@ -1,5 +1,6 @@
 @use '../../../assets/sass/vars'
 @use '../../../assets/sass/mixin'
+@use '../../../assets/sass/breakpoints' as *
   
 .about
   @include mixin.section
@@ -19,16 +20,34 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
+    +mobile 
+      flex-direction: column
+      gap: 20px
+    &-br 
+      +mobile 
+        display: none
     &-title 
       max-width: 449px
       font-weight: 500
       font-size: 32px 
       line-height: 126%
       letter-spacing: -1px
+      +laptop
+        max-width: 381px
+      +mobile 
+        font-size: 20px 
+        line-height: 148%
       span 
         color: vars.$purple600
     &-info 
       max-width: 517px
+      +laptop
+        max-width: 385px
+      +tablet
+        max-width: 311px
+      +tablet 
+        max-width: 100%
+        width: 100%
       &__item
         padding: 18px 0px
         border-top: 1px solid vars.$gray500
@@ -37,7 +56,7 @@
         &:last-of-type
           border-bottom: 1px solid vars.$gray500
         span 
-          width: 36px
+          min-width: 36px
           font-size: 12px
           line-height: 19px
           color: vars.$purple400
@@ -45,4 +64,10 @@
           max-width: 419px
           font-size: 16px
           line-height: 150%
+          +tablet
+            max-width: 233px
+          +mobile 
+            max-width: 100%
+            width: 100%
+
           

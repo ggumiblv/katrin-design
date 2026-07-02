@@ -3,6 +3,7 @@ import projectsData from '@/lib/projects';
 import ProjectCard from '../../project-card';
 
 import futureProjectsImage from '@/assets/icons/future-projects.webp';
+import futureProjectsImageMobile from '@/assets/icons/future-projects-mobile.webp';
 
 import './index.sass';
 
@@ -21,6 +22,11 @@ export default function Projects() {
           <img
             className="projects__list-image"
             src={futureProjectsImage}
+            alt="Будущие проекты - надпись"
+          />
+          <img
+            className="projects__list-image--mobile"
+            src={futureProjectsImageMobile}
             alt="Будущие проекты - надпись"
           />
         </div>

@@ -10,9 +10,15 @@
     display: block
     width: 87px
     height: 36px
+  &__menu 
+    width: 32px 
+    height: 32px
+    display: none
+    +mobile 
+      display: block
   &__container 
     max-width: 1144px
-    height: 76px
+    height: 77px
     margin: auto
     padding-inline: 32px
     display: flex 
@@ -22,15 +28,25 @@
       max-width: 944px
     +tablet
       max-width: 768px
-      padding-inline: 27px
+      padding-inline: 28px
+    +mobile 
+      padding-inline: 14px
   &__nav 
     display: flex 
     justify-content: flex-start
     align-items: center
     gap: 28px
+    +mobile 
+      position: absolute 
+      top: 0 
+      left: 0 
+      z-index: -1
+      opacity: 0 
+      pointer-events: none
     &-button 
       font-size: 16px
       line-height: 110%
+      letter-spacing: -1px
       color: vars.$gray250
       &:hover,
       &:active
@@ -40,6 +56,7 @@
         font-size: 18px
         padding: 8px 17px 
         border: 1px solid vars.$purple600
+        letter-spacing: 0
         border-radius: 6px
         transition: all 250ms ease
         &:hover,
